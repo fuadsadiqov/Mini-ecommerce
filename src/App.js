@@ -28,7 +28,7 @@ export default function App() {
           <RxHamburgerMenu className='pt-1 text-2xl cursor-pointer' onClick={toggleOpen} />
       </header>
       <Basket setBasket={setBasket} setOpen={setOpen} open={open} basket={basket}/>
-      <ul className='pt-20 grid  grid-cols-3'>
+      <ul className='pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
         {array.map((item, index) => {
           return <DataItem basket={basket} setBasket={setBasket} price={price} key={index} index={index} item={item} setPrice={setPrice}/>
         })}      
